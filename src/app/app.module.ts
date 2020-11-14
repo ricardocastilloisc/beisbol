@@ -6,6 +6,7 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingRoutingModule } from './app.routing';
 import { TeamsComponent } from './pages/teams/teams.component';
+import { TeamsModule } from './pages/teams/module/teams/teams.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TeamsComponent } from './pages/teams/teams.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingRoutingModule
+    AppRoutingRoutingModule,
+    TeamsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
